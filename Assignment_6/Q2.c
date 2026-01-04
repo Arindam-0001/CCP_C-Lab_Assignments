@@ -1,0 +1,30 @@
+// Program to read n number of values in an array and display it in reverse order
+ #include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter the size of the array: ");
+    scanf("%d",&n);
+    int arr[n];
+    printf("----Enter the array elements----\n");
+    for(int i=0;i<n;i++){
+        printf("Enter element %d value: ",i+1);
+        scanf("%d",&arr[i]);
+    }
+    printf("Array elements are = [ ");
+    for(int i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
+    printf("]\n");
+    printf("---After read---\n");
+    printf("Array elements are: ");
+    for(int i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
+    printf("\n---After reverse the array elements---\n");
+    printf("Array elements are: ");
+    for(int i=n-1;i>=0;i--){
+        printf("%d ",arr[i]);
+    }
+    return 0;
+}
